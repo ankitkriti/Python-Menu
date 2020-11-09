@@ -172,7 +172,7 @@ while True:
 					os.system("vi {}".format(x))
 	
 				elif ch == 10:
-					file_name=("Enter the file name which you want to upload : ")
+					file_name=input("Enter the file name which you want to upload : ")
 					os.system("hadoop fs -put {} /".format(file_name))
 					os.system("hadoop fs -ls /")
 	
